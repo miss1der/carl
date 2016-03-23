@@ -19,7 +19,19 @@
           <block type="movement_right" id="34"></block>
         </statement>
         <next>
-          <block type="movement_stop" id="74"></block>
+          <block type="controls_repeat" id="81" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="88">
+                <field name="NUM">40000</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_forward" id="98"></block>
+            </statement>
+            <next>
+              <block type="movement_stop" id="108"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
